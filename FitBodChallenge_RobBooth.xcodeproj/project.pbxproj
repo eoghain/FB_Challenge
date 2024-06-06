@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		541FD8BB2C0A8AED00596EDB /* FitBodChallenge_RobBoothApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8BA2C0A8AED00596EDB /* FitBodChallenge_RobBoothApp.swift */; };
+		541FD8BD2C0A8AED00596EDB /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8BC2C0A8AED00596EDB /* WorkoutsView.swift */; };
+		541FD8BF2C0A8AEF00596EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541FD8BE2C0A8AEF00596EDB /* Assets.xcassets */; };
+		541FD8C22C0A8AEF00596EDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541FD8C12C0A8AEF00596EDB /* Preview Assets.xcassets */; };
+		541FD8D62C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8D52C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITests.swift */; };
+		541FD8D82C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8D72C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITestsLaunchTests.swift */; };
+		541FD8E82C0A8B4300596EDB /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8E72C0A8B4300596EDB /* Workout.swift */; };
+		541FD8EA2C0A8B6F00596EDB /* WorkoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8E92C0A8B6F00596EDB /* WorkoutType.swift */; };
+		541FD8ED2C0A8B9000596EDB /* CSVConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8EC2C0A8B9000596EDB /* CSVConverter.swift */; };
+		541FD8F02C0A8CA500596EDB /* workouts.csv in Resources */ = {isa = PBXBuildFile; fileRef = 541FD8EF2C0A8CA500596EDB /* workouts.csv */; };
+		541FD8F42C0D2B8200596EDB /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8F32C0D2B8200596EDB /* Date+Extensions.swift */; };
+		541FD8F62C0D2C8900596EDB /* CSVConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8F52C0D2C8800596EDB /* CSVConverterTests.swift */; };
+		541FD8F82C0D31F100596EDB /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8F72C0D31F100596EDB /* Array+Extensions.swift */; };
+		541FD8FA2C0D3C2200596EDB /* WorkoutsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8F92C0D3C2200596EDB /* WorkoutsGridView.swift */; };
+		541FD8FC2C0D419A00596EDB /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8FB2C0D419A00596EDB /* WorkoutView.swift */; };
+		541FD9002C0D470200596EDB /* WorkoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD8FF2C0D470200596EDB /* WorkoutTests.swift */; };
+		541FD9022C0D515C00596EDB /* WorkoutsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD9012C0D515C00596EDB /* WorkoutsRowView.swift */; };
+		541FD9042C0D57D100596EDB /* JSONDecoder+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD9032C0D57D100596EDB /* JSONDecoder+Extensions.swift */; };
+		541FD9872C0FD42800596EDB /* OneRepChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD9862C0FD42800596EDB /* OneRepChartView.swift */; };
+		541FD98A2C12302900596EDB /* WorkoutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD9892C12302900596EDB /* WorkoutsViewModel.swift */; };
+		541FD98C2C12329300596EDB /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD98B2C12329300596EDB /* WorkoutViewModel.swift */; };
+		541FD98E2C1232AA00596EDB /* WorkoutGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD98D2C1232AA00596EDB /* WorkoutGridViewModel.swift */; };
+		541FD9902C12336500596EDB /* WorkoutsRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD98F2C12336500596EDB /* WorkoutsRowViewModel.swift */; };
+		541FD9922C12338F00596EDB /* OneRepChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541FD9912C12338F00596EDB /* OneRepChartViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		541FD8C82C0A8AEF00596EDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541FD8AF2C0A8AED00596EDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 541FD8B62C0A8AED00596EDB;
+			remoteInfo = FitBodChallenge_RobBooth;
+		};
+		541FD8D22C0A8AEF00596EDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541FD8AF2C0A8AED00596EDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 541FD8B62C0A8AED00596EDB;
+			remoteInfo = FitBodChallenge_RobBooth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		541FD8B72C0A8AED00596EDB /* FitBodChallenge_RobBooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBodChallenge_RobBooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		541FD8BA2C0A8AED00596EDB /* FitBodChallenge_RobBoothApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBodChallenge_RobBoothApp.swift; sourceTree = "<group>"; };
+		541FD8BC2C0A8AED00596EDB /* WorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
+		541FD8BE2C0A8AEF00596EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		541FD8C12C0A8AEF00596EDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		541FD8C72C0A8AEF00596EDB /* FitBodChallenge_RobBoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitBodChallenge_RobBoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		541FD8D12C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitBodChallenge_RobBoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		541FD8D52C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBodChallenge_RobBoothUITests.swift; sourceTree = "<group>"; };
+		541FD8D72C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBodChallenge_RobBoothUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		541FD8E72C0A8B4300596EDB /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		541FD8E92C0A8B6F00596EDB /* WorkoutType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutType.swift; sourceTree = "<group>"; };
+		541FD8EC2C0A8B9000596EDB /* CSVConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVConverter.swift; sourceTree = "<group>"; };
+		541FD8EF2C0A8CA500596EDB /* workouts.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = workouts.csv; sourceTree = "<group>"; };
+		541FD8F12C0A914700596EDB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		541FD8F32C0D2B8200596EDB /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		541FD8F52C0D2C8800596EDB /* CSVConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVConverterTests.swift; sourceTree = "<group>"; };
+		541FD8F72C0D31F100596EDB /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		541FD8F92C0D3C2200596EDB /* WorkoutsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsGridView.swift; sourceTree = "<group>"; };
+		541FD8FB2C0D419A00596EDB /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		541FD8FF2C0D470200596EDB /* WorkoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTests.swift; sourceTree = "<group>"; };
+		541FD9012C0D515C00596EDB /* WorkoutsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsRowView.swift; sourceTree = "<group>"; };
+		541FD9032C0D57D100596EDB /* JSONDecoder+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extensions.swift"; sourceTree = "<group>"; };
+		541FD9862C0FD42800596EDB /* OneRepChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepChartView.swift; sourceTree = "<group>"; };
+		541FD9892C12302900596EDB /* WorkoutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewModel.swift; sourceTree = "<group>"; };
+		541FD98B2C12329300596EDB /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
+		541FD98D2C1232AA00596EDB /* WorkoutGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutGridViewModel.swift; sourceTree = "<group>"; };
+		541FD98F2C12336500596EDB /* WorkoutsRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsRowViewModel.swift; sourceTree = "<group>"; };
+		541FD9912C12338F00596EDB /* OneRepChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneRepChartViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		541FD8B42C0A8AED00596EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541FD8C42C0A8AEF00596EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541FD8CE2C0A8AEF00596EDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		541FD8AE2C0A8AED00596EDB = {
+			isa = PBXGroup;
+			children = (
+				541FD8B92C0A8AED00596EDB /* FitBodChallenge_RobBooth */,
+				541FD8CA2C0A8AEF00596EDB /* FitBodChallenge_RobBoothTests */,
+				541FD8D42C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITests */,
+				541FD8B82C0A8AED00596EDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		541FD8B82C0A8AED00596EDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				541FD8B72C0A8AED00596EDB /* FitBodChallenge_RobBooth.app */,
+				541FD8C72C0A8AEF00596EDB /* FitBodChallenge_RobBoothTests.xctest */,
+				541FD8D12C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		541FD8B92C0A8AED00596EDB /* FitBodChallenge_RobBooth */ = {
+			isa = PBXGroup;
+			children = (
+				541FD8F22C0D2B7300596EDB /* Extensions */,
+				541FD8EE2C0A8C8E00596EDB /* Content */,
+				541FD8EB2C0A8B7F00596EDB /* Helpers */,
+				541FD8E52C0A8B1000596EDB /* Views */,
+				541FD9882C12300E00596EDB /* ViewModels */,
+				541FD8E42C0A8B0900596EDB /* Models */,
+				541FD8BA2C0A8AED00596EDB /* FitBodChallenge_RobBoothApp.swift */,
+				541FD8BE2C0A8AEF00596EDB /* Assets.xcassets */,
+				541FD8C02C0A8AEF00596EDB /* Preview Content */,
+				541FD8F12C0A914700596EDB /* README.md */,
+			);
+			path = FitBodChallenge_RobBooth;
+			sourceTree = "<group>";
+		};
+		541FD8C02C0A8AEF00596EDB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				541FD8C12C0A8AEF00596EDB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		541FD8CA2C0A8AEF00596EDB /* FitBodChallenge_RobBoothTests */ = {
+			isa = PBXGroup;
+			children = (
+				541FD8F52C0D2C8800596EDB /* CSVConverterTests.swift */,
+				541FD8FF2C0D470200596EDB /* WorkoutTests.swift */,
+			);
+			path = FitBodChallenge_RobBoothTests;
+			sourceTree = "<group>";
+		};
+		541FD8D42C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITests */ = {
+			isa = PBXGroup;
+			children = (
+				541FD8D52C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITests.swift */,
+				541FD8D72C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITestsLaunchTests.swift */,
+			);
+			path = FitBodChallenge_RobBoothUITests;
+			sourceTree = "<group>";
+		};
+		541FD8E42C0A8B0900596EDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				541FD8E72C0A8B4300596EDB /* Workout.swift */,
+				541FD8E92C0A8B6F00596EDB /* WorkoutType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		541FD8E52C0A8B1000596EDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				541FD8BC2C0A8AED00596EDB /* WorkoutsView.swift */,
+				541FD8F92C0D3C2200596EDB /* WorkoutsGridView.swift */,
+				541FD8FB2C0D419A00596EDB /* WorkoutView.swift */,
+				541FD9012C0D515C00596EDB /* WorkoutsRowView.swift */,
+				541FD9862C0FD42800596EDB /* OneRepChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		541FD8EB2C0A8B7F00596EDB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				541FD8EC2C0A8B9000596EDB /* CSVConverter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		541FD8EE2C0A8C8E00596EDB /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				541FD8EF2C0A8CA500596EDB /* workouts.csv */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		541FD8F22C0D2B7300596EDB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				541FD8F32C0D2B8200596EDB /* Date+Extensions.swift */,
+				541FD8F72C0D31F100596EDB /* Array+Extensions.swift */,
+				541FD9032C0D57D100596EDB /* JSONDecoder+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		541FD9882C12300E00596EDB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				541FD9892C12302900596EDB /* WorkoutsViewModel.swift */,
+				541FD98B2C12329300596EDB /* WorkoutViewModel.swift */,
+				541FD98D2C1232AA00596EDB /* WorkoutGridViewModel.swift */,
+				541FD98F2C12336500596EDB /* WorkoutsRowViewModel.swift */,
+				541FD9912C12338F00596EDB /* OneRepChartViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		541FD8B62C0A8AED00596EDB /* FitBodChallenge_RobBooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541FD8DB2C0A8AEF00596EDB /* Build configuration list for PBXNativeTarget "FitBodChallenge_RobBooth" */;
+			buildPhases = (
+				541FD8B32C0A8AED00596EDB /* Sources */,
+				541FD8B42C0A8AED00596EDB /* Frameworks */,
+				541FD8B52C0A8AED00596EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitBodChallenge_RobBooth;
+			productName = FitBodChallenge_RobBooth;
+			productReference = 541FD8B72C0A8AED00596EDB /* FitBodChallenge_RobBooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		541FD8C62C0A8AEF00596EDB /* FitBodChallenge_RobBoothTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541FD8DE2C0A8AEF00596EDB /* Build configuration list for PBXNativeTarget "FitBodChallenge_RobBoothTests" */;
+			buildPhases = (
+				541FD8C32C0A8AEF00596EDB /* Sources */,
+				541FD8C42C0A8AEF00596EDB /* Frameworks */,
+				541FD8C52C0A8AEF00596EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				541FD8C92C0A8AEF00596EDB /* PBXTargetDependency */,
+			);
+			name = FitBodChallenge_RobBoothTests;
+			productName = FitBodChallenge_RobBoothTests;
+			productReference = 541FD8C72C0A8AEF00596EDB /* FitBodChallenge_RobBoothTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		541FD8D02C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541FD8E12C0A8AEF00596EDB /* Build configuration list for PBXNativeTarget "FitBodChallenge_RobBoothUITests" */;
+			buildPhases = (
+				541FD8CD2C0A8AEF00596EDB /* Sources */,
+				541FD8CE2C0A8AEF00596EDB /* Frameworks */,
+				541FD8CF2C0A8AEF00596EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				541FD8D32C0A8AEF00596EDB /* PBXTargetDependency */,
+			);
+			name = FitBodChallenge_RobBoothUITests;
+			productName = FitBodChallenge_RobBoothUITests;
+			productReference = 541FD8D12C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		541FD8AF2C0A8AED00596EDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					541FD8B62C0A8AED00596EDB = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					541FD8C62C0A8AEF00596EDB = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 541FD8B62C0A8AED00596EDB;
+					};
+					541FD8D02C0A8AEF00596EDB = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 541FD8B62C0A8AED00596EDB;
+					};
+				};
+			};
+			buildConfigurationList = 541FD8B22C0A8AED00596EDB /* Build configuration list for PBXProject "FitBodChallenge_RobBooth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 541FD8AE2C0A8AED00596EDB;
+			productRefGroup = 541FD8B82C0A8AED00596EDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				541FD8B62C0A8AED00596EDB /* FitBodChallenge_RobBooth */,
+				541FD8C62C0A8AEF00596EDB /* FitBodChallenge_RobBoothTests */,
+				541FD8D02C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		541FD8B52C0A8AED00596EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541FD8F02C0A8CA500596EDB /* workouts.csv in Resources */,
+				541FD8C22C0A8AEF00596EDB /* Preview Assets.xcassets in Resources */,
+				541FD8BF2C0A8AEF00596EDB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541FD8C52C0A8AEF00596EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541FD8CF2C0A8AEF00596EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		541FD8B32C0A8AED00596EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541FD98C2C12329300596EDB /* WorkoutViewModel.swift in Sources */,
+				541FD8BD2C0A8AED00596EDB /* WorkoutsView.swift in Sources */,
+				541FD8EA2C0A8B6F00596EDB /* WorkoutType.swift in Sources */,
+				541FD8FA2C0D3C2200596EDB /* WorkoutsGridView.swift in Sources */,
+				541FD8ED2C0A8B9000596EDB /* CSVConverter.swift in Sources */,
+				541FD8FC2C0D419A00596EDB /* WorkoutView.swift in Sources */,
+				541FD8F82C0D31F100596EDB /* Array+Extensions.swift in Sources */,
+				541FD9902C12336500596EDB /* WorkoutsRowViewModel.swift in Sources */,
+				541FD8BB2C0A8AED00596EDB /* FitBodChallenge_RobBoothApp.swift in Sources */,
+				541FD98A2C12302900596EDB /* WorkoutsViewModel.swift in Sources */,
+				541FD9042C0D57D100596EDB /* JSONDecoder+Extensions.swift in Sources */,
+				541FD98E2C1232AA00596EDB /* WorkoutGridViewModel.swift in Sources */,
+				541FD8E82C0A8B4300596EDB /* Workout.swift in Sources */,
+				541FD9922C12338F00596EDB /* OneRepChartViewModel.swift in Sources */,
+				541FD8F42C0D2B8200596EDB /* Date+Extensions.swift in Sources */,
+				541FD9872C0FD42800596EDB /* OneRepChartView.swift in Sources */,
+				541FD9022C0D515C00596EDB /* WorkoutsRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541FD8C32C0A8AEF00596EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541FD8F62C0D2C8900596EDB /* CSVConverterTests.swift in Sources */,
+				541FD9002C0D470200596EDB /* WorkoutTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541FD8CD2C0A8AEF00596EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541FD8D62C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITests.swift in Sources */,
+				541FD8D82C0A8AEF00596EDB /* FitBodChallenge_RobBoothUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		541FD8C92C0A8AEF00596EDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 541FD8B62C0A8AED00596EDB /* FitBodChallenge_RobBooth */;
+			targetProxy = 541FD8C82C0A8AEF00596EDB /* PBXContainerItemProxy */;
+		};
+		541FD8D32C0A8AEF00596EDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 541FD8B62C0A8AED00596EDB /* FitBodChallenge_RobBooth */;
+			targetProxy = 541FD8D22C0A8AEF00596EDB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		541FD8D92C0A8AEF00596EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		541FD8DA2C0A8AEF00596EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		541FD8DC2C0A8AEF00596EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitBodChallenge_RobBooth/Preview Content\"";
+				DEVELOPMENT_TEAM = 9C5R4TQX7A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robbooth.FitBodChallenge-RobBooth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		541FD8DD2C0A8AEF00596EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitBodChallenge_RobBooth/Preview Content\"";
+				DEVELOPMENT_TEAM = 9C5R4TQX7A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robbooth.FitBodChallenge-RobBooth";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		541FD8DF2C0A8AEF00596EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9C5R4TQX7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robbooth.FitBodChallenge-RobBoothTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitBodChallenge_RobBooth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FitBodChallenge_RobBooth";
+			};
+			name = Debug;
+		};
+		541FD8E02C0A8AEF00596EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9C5R4TQX7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robbooth.FitBodChallenge-RobBoothTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitBodChallenge_RobBooth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FitBodChallenge_RobBooth";
+			};
+			name = Release;
+		};
+		541FD8E22C0A8AEF00596EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9C5R4TQX7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robbooth.FitBodChallenge-RobBoothUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FitBodChallenge_RobBooth;
+			};
+			name = Debug;
+		};
+		541FD8E32C0A8AEF00596EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9C5R4TQX7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robbooth.FitBodChallenge-RobBoothUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FitBodChallenge_RobBooth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		541FD8B22C0A8AED00596EDB /* Build configuration list for PBXProject "FitBodChallenge_RobBooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541FD8D92C0A8AEF00596EDB /* Debug */,
+				541FD8DA2C0A8AEF00596EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541FD8DB2C0A8AEF00596EDB /* Build configuration list for PBXNativeTarget "FitBodChallenge_RobBooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541FD8DC2C0A8AEF00596EDB /* Debug */,
+				541FD8DD2C0A8AEF00596EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541FD8DE2C0A8AEF00596EDB /* Build configuration list for PBXNativeTarget "FitBodChallenge_RobBoothTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541FD8DF2C0A8AEF00596EDB /* Debug */,
+				541FD8E02C0A8AEF00596EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541FD8E12C0A8AEF00596EDB /* Build configuration list for PBXNativeTarget "FitBodChallenge_RobBoothUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541FD8E22C0A8AEF00596EDB /* Debug */,
+				541FD8E32C0A8AEF00596EDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 541FD8AF2C0A8AED00596EDB /* Project object */;
+}
