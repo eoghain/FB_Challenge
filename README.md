@@ -6,3 +6,5 @@ When approaching this challenge I started by just embedding the CSV file into th
 
 I considered building a local database of the rows from the CSV file using SwiftData but decided that was overkill for this tech challenge.
 
+Thank you for taking the time to review my work.
+
